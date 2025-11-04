@@ -283,10 +283,13 @@ p {
     margin-left: 150px;
 
 }
-.birthday-text {
-  white-space: normal !important;
-  display: block;
-  font-size: min(40px, 8vw) !important;
-  text-align: center !important;
-  line-height: 1.25 !important;
+#headline{white-space:normal;text-align:center;}
+#headline .line1,#headline .line2{display:block;}
+#headline .emoji{
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",system-ui,sans-serif;
 }
+@media (max-width:600px){
+  #headline{font-size:32px!important;line-height:1.2;}
+  .mobile-br{display:block;}
+}
+@media (min-width:601px){ .mobile-br{display:none;} }
